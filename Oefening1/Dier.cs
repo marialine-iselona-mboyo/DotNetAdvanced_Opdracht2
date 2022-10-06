@@ -8,13 +8,13 @@ namespace Huisdieren
 {
     internal class Dier
     {
-        public double gewicht;
+        //public double gewicht;
 
-        private string uitspraak;
+        //private string uitspraak;
 
-        public string zegt()
+        /*public string zegt()
         {
             return uitspraak;
-        }
+        }*/
     }
 }
