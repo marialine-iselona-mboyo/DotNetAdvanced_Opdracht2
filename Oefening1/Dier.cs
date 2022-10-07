@@ -8,8 +8,6 @@ namespace Oefening1
 {
     public class Dier
     { 
-
-        //private Boolean isAlive { get; set; }
         private int gewicht { get; set; }
 
         public Dier(int gewicht)
