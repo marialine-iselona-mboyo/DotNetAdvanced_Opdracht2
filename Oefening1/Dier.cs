@@ -4,17 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Huisdieren
+namespace Oefening1
 {
-    internal class Dier
+    public class Dier
     {
-        //public double gewicht;
-
-        //private string uitspraak;
-
-        /*public string zegt()
+        public virtual void Zegt()
         {
-            return uitspraak;
-        }*/
+            Console.WriteLine("hello");
+        }
+    }
+
+    public class Koe : Dier
+    {
+        public override void Zegt()
+        {
+            Console.WriteLine("boe");
+        }
+    }
+
+    public class Slang : Dier
+    {
+        public override void Zegt()
+        {
+            Console.WriteLine("ssj");
+        }
+    }
+
+    public class Varken : Dier
+    {
+        public override void Zegt()
+        {
+            Console.WriteLine("groink");
+        }
     }
 }
