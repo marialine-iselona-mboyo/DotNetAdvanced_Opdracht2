@@ -23,7 +23,6 @@ namespace Oefening2
         public override string Zegt() 
         {
             return "boe";
-            //Console.WriteLine("boe");
         }
 
         public static void KoeSoundd()
@@ -42,7 +41,6 @@ namespace Oefening2
         public override string Zegt()
         {
             return "ssj";
-            //Console.WriteLine("ssj");
         }
 
         public static void SlangSoundd()
@@ -60,7 +58,6 @@ namespace Oefening2
         public override string Zegt()
         {
             return "groink groink";
-            //Console.WriteLine("groink groink");
         }
 
         public static void VarkenSound()
