@@ -28,7 +28,7 @@ namespace MyApp
             dier.Zegt();
             Console.WriteLine(varken1.ToString());
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
 
             Console.WriteLine(dier.ToString());

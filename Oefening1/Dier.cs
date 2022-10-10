@@ -11,19 +11,12 @@ namespace Oefening1
         private object uitspraak;
 
         public int gewicht { get; set; }
-        private string Uitspraak { get; }
-        private string Geluid { get; }
 
         public Dier(int gewicht)
         {
             this.gewicht = gewicht;
 
             Console.WriteLine();
-        }
-
-        public Dier(int gewicht, object uitspraak) : this(gewicht)
-        {
-            this.uitspraak = uitspraak;
         }
 
         public virtual void Zegt()
@@ -45,10 +38,6 @@ namespace Oefening1
         {
         }
 
-        public Koe(int gewicht, object Uitspraak) : base(gewicht, Uitspraak)
-        {
-        }
-
         public override void Zegt()
         {
             Console.WriteLine("boe");
@@ -58,10 +47,6 @@ namespace Oefening1
     public class Slang : Dier
     {
         public Slang(int gewicht) : base(gewicht)
-        {
-        } 
-
-        public Slang(int gewicht, object Uitspraak) : base(gewicht, Uitspraak)
         {
         }
 
@@ -74,10 +59,6 @@ namespace Oefening1
     public class Varken : Dier
     {
         public Varken(int gewicht) : base(gewicht)
-        {
-        }
-
-        public Varken(int gewicht, object Uitspraak) : base(gewicht, Uitspraak)
         {
         }
 

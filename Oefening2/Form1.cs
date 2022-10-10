@@ -6,5 +6,19 @@ namespace Oefening2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (cbKoe.Checked)
+            {
+                
+            } else if (cbSlang.Checked)
+            {
+
+            } else if (cbVarken.Checked)
+            {
+
+            }
+        }
     }
 }
