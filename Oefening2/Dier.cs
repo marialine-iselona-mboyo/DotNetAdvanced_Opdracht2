@@ -26,7 +26,7 @@ namespace Oefening2
             //Console.WriteLine("boe");
         }
 
-        public void koeSoundd()
+        public static void KoeSoundd()
         {
             SoundPlayer sound = new SoundPlayer(@"C:\Users\User\OneDrive\Documents\School\.NET Advanced\DotNetAdvanced_Opdracht2\Oefening2\cow-sound.wav");
             sound.Play();
@@ -45,7 +45,7 @@ namespace Oefening2
             //Console.WriteLine("ssj");
         }
 
-        public void slangSoundd()
+        public static void SlangSoundd()
         {
             SoundPlayer sound = new SoundPlayer(@"C:\Users\User\OneDrive\Documents\School\.NET Advanced\DotNetAdvanced_Opdracht2\Oefening2\snake-sound.wav");
             sound.Play();
@@ -63,7 +63,7 @@ namespace Oefening2
             //Console.WriteLine("groink groink");
         }
 
-        public void varkenSoundd()
+        public static void VarkenSound()
         {
             SoundPlayer sound = new SoundPlayer(@"C:\Users\User\OneDrive\Documents\School\.NET Advanced\DotNetAdvanced_Opdracht2\Oefening2\pig-sound.wav");
             sound.Play();

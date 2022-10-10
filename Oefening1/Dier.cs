@@ -19,6 +19,10 @@ namespace Oefening1
             Console.WriteLine();
         }
 
+        public Dier()
+        {
+        }
+
         public virtual void Zegt()
         {
             Console.WriteLine();

@@ -32,6 +32,7 @@
             this.cbSlang = new System.Windows.Forms.CheckBox();
             this.cbVarken = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cbKoe
@@ -43,6 +44,7 @@
             this.cbKoe.TabIndex = 0;
             this.cbKoe.Text = "Koe";
             this.cbKoe.UseVisualStyleBackColor = true;
+            this.cbKoe.CheckedChanged += new System.EventHandler(this.cbKoe_CheckedChanged);
             // 
             // cbSlang
             // 
@@ -53,6 +55,7 @@
             this.cbSlang.TabIndex = 1;
             this.cbSlang.Text = "Slang";
             this.cbSlang.UseVisualStyleBackColor = true;
+            this.cbSlang.CheckedChanged += new System.EventHandler(this.cbSlang_CheckedChanged);
             // 
             // cbVarken
             // 
@@ -63,6 +66,7 @@
             this.cbVarken.TabIndex = 2;
             this.cbVarken.Text = "Varken";
             this.cbVarken.UseVisualStyleBackColor = true;
+            this.cbVarken.CheckedChanged += new System.EventHandler(this.cbVarken_CheckedChanged);
             // 
             // button1
             // 
@@ -74,11 +78,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(283, 90);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(150, 31);
+            this.textBox1.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 450);
+            this.ClientSize = new System.Drawing.Size(754, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbVarken);
             this.Controls.Add(this.cbSlang);
@@ -92,9 +104,9 @@
 
         #endregion
 
+        private Button button1;
         private CheckBox cbKoe;
         private CheckBox cbSlang;
         private CheckBox cbVarken;
-        private Button button1;
     }
 }

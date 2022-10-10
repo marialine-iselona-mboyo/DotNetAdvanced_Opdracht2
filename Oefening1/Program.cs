@@ -10,11 +10,11 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            Dier dier = new Dier(250);
+            var dier = new Dier();
 
-            Koe koe1 = new Koe(500);
-            Slang slang1 = new Slang(50);
-            Varken varken1 = new Varken(250);
+            var koe1 = new Koe(500);
+            var slang1 = new Slang(50);
+            var varken1 = new Varken(250);
 
             dier = koe1;
             dier.Zegt();
@@ -27,11 +27,6 @@ namespace MyApp
             dier = varken1;
             dier.Zegt();
             Console.WriteLine(varken1.ToString());
-
-            //Console.WriteLine();
-
-
-            Console.WriteLine(dier.ToString());
         }
 
     }

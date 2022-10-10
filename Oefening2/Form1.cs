@@ -12,12 +12,14 @@ namespace Oefening2
             if (cbKoe.Checked)
             {
                 
-            } else if (cbSlang.Checked)
+            }
+            else if (cbVarken.Checked)
             {
-
-            } else if (cbVarken.Checked)
+                
+            }
+            else if (cbSlang.Checked)
             {
-
+                
             }
         }
     }
