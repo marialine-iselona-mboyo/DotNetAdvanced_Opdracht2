@@ -8,7 +8,6 @@ namespace Oefening1
 {
     public class Dier
     {
-        private object uitspraak;
 
         public int gewicht { get; set; }
 

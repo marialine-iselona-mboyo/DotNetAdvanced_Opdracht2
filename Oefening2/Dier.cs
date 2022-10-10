@@ -10,8 +10,6 @@ namespace Oefening2
     internal abstract class Dier
     {
         public abstract string Zegt();
-        
-
     }
 
 
@@ -19,16 +17,15 @@ namespace Oefening2
 
     internal class Koe : Dier
     {
-
-        public override string Zegt() 
+        public void KoeSound()
         {
-            return "boe";
+            SoundPlayer sound = new(@"C:\Users\User\OneDrive\Documents\School\.NET Advanced\DotNetAdvanced_Opdracht2\Oefening2\cow-sound.wav");
+            sound.Play();
         }
 
-        public static void KoeSoundd()
+        public override string Zegt()
         {
-            SoundPlayer sound = new SoundPlayer(@"C:\Users\User\OneDrive\Documents\School\.NET Advanced\DotNetAdvanced_Opdracht2\Oefening2\cow-sound.wav");
-            sound.Play();
+            return "boe";
         }
     }
 
@@ -37,16 +34,15 @@ namespace Oefening2
 
     internal class Slang : Dier
     {
+        public void SlangSound()
+        {
+            SoundPlayer sound = new(@"C:\Users\User\OneDrive\Documents\School\.NET Advanced\DotNetAdvanced_Opdracht2\Oefening2\snake-sound.wav");
+            sound.Play();
+        }
 
         public override string Zegt()
         {
             return "ssj";
-        }
-
-        public static void SlangSoundd()
-        {
-            SoundPlayer sound = new SoundPlayer(@"C:\Users\User\OneDrive\Documents\School\.NET Advanced\DotNetAdvanced_Opdracht2\Oefening2\snake-sound.wav");
-            sound.Play();
         }
     }
 
@@ -54,16 +50,15 @@ namespace Oefening2
 
     internal class Varken : Dier
     {
+        public void VarkenSound()
+        {
+            SoundPlayer sound = new(@"C:\Users\User\OneDrive\Documents\School\.NET Advanced\DotNetAdvanced_Opdracht2\Oefening2\pig-sound.wav");
+            sound.Play();
+        }
 
         public override string Zegt()
         {
             return "groink groink";
-        }
-
-        public static void VarkenSound()
-        {
-            SoundPlayer sound = new SoundPlayer(@"C:\Users\User\OneDrive\Documents\School\.NET Advanced\DotNetAdvanced_Opdracht2\Oefening2\pig-sound.wav");
-            sound.Play();
         }
     }
 }
